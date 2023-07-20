@@ -1,0 +1,13 @@
+* grpc-routing-microservice
+
+*** Build with Docker
+   #+begin_src sh 
+   docker build . -t routing
+   #+end_src
+*** Run with Docker
+   #+begin_src sh
+   docker run -it routing
+   #+end_src
+
+
+   

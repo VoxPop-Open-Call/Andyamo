@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+// Interface exported by the server.
+service RouteService {
+  rpc ShortestPath(RouteRequest) returns (RouteResponse) {}
+  rpc ListNodes(Profile) returns (stream Node) {}
+}
+
+message RouteRequest {
+  string start = 1;
+  string end = 2;
+  Profile profile = 3;
+}
+
+
+message Profile {
+  enum Profile {	
+    FOOT = 0;
+    MANUAL_WHEELCHAIR = 1;
+    ELECTRIC_WHEELCHAIR = 2;
+    
+  }
+  Profile profile = 1;
+}
+
+message RouteResponse {
+  repeated string route = 1;
+  int32 distance = 2;
+}
+
+message Node {
+	string index = 1;
+	float latitude = 2;
+	float longitude = 3;
+}

@@ -1,0 +1,13 @@
+-i https://pypi.andyamo.fr/simple
+andyamo==0.1.2
+fastapi==0.71.0
+geopy==2.2.0
+uvicorn==0.15.0
+requests==2.27.1
+grpcio-tools==1.43.0
+opentracing==2.4.0
+scipy==1.8.0
+opentelemetry-sdk==1.10.0
+opentelemetry-api==1.10.0
+opentelemetry-exporter-jaeger==1.10.0
+numpy==1.22.2

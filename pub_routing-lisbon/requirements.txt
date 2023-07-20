@@ -1,0 +1,5 @@
+-i https://pypi.andyamo.fr/simple
+andyamo==0.1.2
+grpcio-tools==1.44.0
+geographiclib==1.52
+geopy==2.2.0
